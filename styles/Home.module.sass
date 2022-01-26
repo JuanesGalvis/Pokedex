@@ -1,0 +1,131 @@
+.hidden
+    display: none
+    
+.header
+    font-family: Arial, Helvetica, sans-serif
+    width: 100%
+    place-content: center
+    display: flex
+    place-content: center
+    margin: 20px 0px
+    background-color: #3c5aa6
+    color: #ffcb05
+
+    &__pokeball
+        margin: 0px 30px 0px 0px
+
+    &__title
+        font-size: 40px
+        text-align: center
+        margin: 0px
+
+.main
+    width: 90%
+    margin: 0 auto
+    font-family: Arial, Helvetica, sans-serif
+
+.listPokemones
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    justify-content: center
+    align-content: center
+    text-align: center
+    column-gap: 5px
+    row-gap: 20px
+
+.pokemon
+    &__name
+        background-color: rgba(10, 10, 10, 0.8)
+        padding: 2px 0px
+        border-bottom: 3px solid #9FD5D1
+        color: white
+
+    &__button
+        background-color: #9FD5D1
+        color: black
+        font-weight: bold
+        width: 80%
+        padding: 3px 5px
+        border: 0
+        border-radius: 5px
+
+    &__types
+        display: flex
+        place-content: center
+
+    &__type
+        background-color: rgba(10, 10, 10, 0.8)
+        padding: 5px 8px
+        border-bottom: 3px solid #9FD5D1
+        color: white
+        margin: 10px
+        border-radius: 10px
+
+.selected p
+    background-color: #ffcb05
+    border-bottom: 3px solid #101010
+    color: #101010
+    font-weight: bold
+
+.onePokemon
+    background-color: rgba(154, 208, 236, 0.5)
+    text-align: center
+    border-radius: 5px
+    padding: 8px 0px
+    margin: 10px auto
+    border: 2px solid #101010
+
+    h2
+        color: #1572A1
+        
+.footer
+    width: 100%
+    display: grid
+    grid-template-columns: 1
+    place-content: center
+    padding: 20px 0px
+
+    .btnNavigation
+        background-color: #9FD5D1
+        color: black
+        font-weight: bold
+        padding: 3px 5px
+        border: 0
+        border-radius: 5px
+
+        &:disabled
+            opacity: 0.2
+
+    button
+        margin: 0px 10px
+
+@media (min-width: 1024px)
+    .main
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        justify-content: center
+        align-items: center
+
+        .onePokemon
+            width: 60%
+            height: fit-content
+
+        .listPokemones
+            grid-template-columns: repeat(4, 1fr)
+
+.footer
+    width: 100%
+    display: flex
+    place-content: center
+    padding: 20px 0px
+
+    .btnNavigation
+        background-color: #9FD5D1
+        color: black
+        font-weight: bold
+        padding: 3px 5px
+        border: 0
+        border-radius: 5px
+
+    button
+        margin: 0px 10px
