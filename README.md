@@ -18,12 +18,17 @@ npm run lint
 ```
 
 ## Estructura de carpetas
+- 📁 assets             --> Imágenes y estáticos
+- 📁 components         --> Componentes de la aplicación
 - 📁 pages              --> Páginas y contenido del proyecto
+- - 📄 _app.js          --> Aplicación
+- - 📄 _document.js     --> Extender documento
+- - 📄 index.js         --> Inicio y principal
 - 📁 public             --> Elementos públicos
 - 📁 styles             --> Estilos
-- 📄 .eslintrc.js       --> Configuración de eslint
 - 📄 .eslintignore      --> Ignorado por eslint
+- 📄 .eslintrc.js       --> Configuración de eslint
 - 📄 .gitignore         --> Ignorado por git
+- 📄 README.md          --> README para GitHub
 - 📄 next.config.js     --> Configuración de Next.js
 - 📄 package.json       --> Dependencias y comandos
-- 📄 README.md          --> README para GitHub
